@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h2>My Store</h2>
+
+      <input type="text" id="search" placeholder="Search Products" />
+
+      <select id="filter">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="jewelery">Jewelery</option>
+        <option value="men's clothing">Men's Clothing</option>
+        <option value="women's clothing">Women's Clothing</option>
+      </select>
+
+      <button id="homeBtn">Home</button>
+      <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+    </nav>
+
+    <!--Home Page -->
+    <section id="homePage">
+      <div id="products"></div>
+      <div id="pagination"></div>
+    </section>
+
+    <!--Cart Page-->
+    <section id="cartPage" class="hidden">
+      <h2>Checkout</h2>
+      <div id="cartItems"></div>
+
+      <div class="total">
+        <h3 class="total" id="totalPrice"></h3>
+        <button id="checkoutBtn">Proceed To Checkout</button>
+      </div>
+    </section>
+
+    <!-- CheckOut Page-->
+    <div class="checkoutContainer">
+      <section id="checkoutPage" class="hidden">
+        <h2>Checkout</h2>
+
+        <form id="checkoutForm">
+          <input type="text" placeholder="Name" required />
+
+          <input type="email" placeholder="Email" required />
+
+          <input type="text" placeholder="phone" required />
+
+          <textarea placeholder="Address" required></textarea>
+
+          <button class="order-btn" type="submit">Place Order</button>
+        </form>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

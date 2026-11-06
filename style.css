@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: whitesmoke;
+}
+.hidden {
+  display: none;
+}
+nav {
+  background: darkslategray;
+  color: white;
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+}
+#search {
+  border-radius: 10px;
+  border: none;
+}
+
+#filter,
+#homeBtn,
+#cartBtn {
+  border-radius: 8px;
+  border: none;
+}
+
+nav input,
+nav select {
+  padding: 8px;
+}
+
+nav button {
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+.card h3 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+.card button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  background: green;
+  color: white;
+  cursor: pointer;
+}
+.card button:active {
+  background: rgb(119, 154, 119);
+}
+#pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+#pagination button {
+  padding: 8px 15px;
+}
+
+#cartPage,
+#checkoutPage {
+  padding: 20px;
+}
+
+.cart-item {
+  background: white;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-item button {
+  padding: 5px 10px;
+  background: red;
+  color: white;
+  border: none;
+}
+#checkoutBtn {
+  width: 200px;
+  height: 40px;
+  background: rgb(1, 203, 85);
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+#checkoutBtn:active {
+  background: green;
+}
+.remove-btn {
+  cursor: pointer;
+  border-radius: 10px;
+}
+.remove-btn:active {
+  background: rgb(228, 135, 135);
+}
+.total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+}
+
+form button {
+  padding: 10px;
+  background: green;
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+}
+form button:active {
+  background: rgb(19, 99, 19);
+}
